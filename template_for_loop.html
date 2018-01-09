@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - shri</title>
+        {% else %}
+        <title>Welcome to shri</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Hi, {{ user.username }}!</h1>
+        {% for skill in skills %}
+        <div><p>{{ skill.name }} : <b>{{ skill.body }}</b></p></div>
+        {% endfor %}
+    </body>
+</html>
